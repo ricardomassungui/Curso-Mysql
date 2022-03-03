@@ -1,0 +1,12 @@
+//criar usuário e senha no MYSQL
+
+create user nome_usuario@'%' identified by 'senha_usuario';
+
+//dando todo acesso ao banco no usuário
+
+grant all privileges on *.* to usermysql@'%'
+with grant option;
+
+//revogar o acesso ao banco no usuário
+
+revoke all on *.* from usermysql;

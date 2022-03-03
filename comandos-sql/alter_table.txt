@@ -1,0 +1,23 @@
+show create table exemplo;
+show create database exemplo;
+use cadastro;
+describe gafanhotos;
+
+alter table pessoas
+add column codigo int first;
+
+alter table pessoas
+add column profissao varchar(20) not null after nome;
+
+alter table pessoas
+drop column profissao;
+
+alter table pessoas
+modify profissao varchar(20);
+
+alter table pessoas
+change profissao prof varchar(20) not null;
+alter table pessoas 
+rename to gafanhotos;
+
+select * from gafanhotos;

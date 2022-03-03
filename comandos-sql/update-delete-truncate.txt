@@ -1,0 +1,25 @@
+update cursos
+set nome = 'HTML5'
+where idcursos = '1';
+
+update cursos
+set nome = 'PHP', ano = '2015'
+where idcursos  = '4';
+
+update cursos
+set ano = '2050', carga = '800'
+where ano = '2018';
+
+update cursos
+set ano = '2018', carga = '0'
+where ano = '2050'
+limit 1;
+
+delete from cursos
+where idcursos = '8';
+
+delete from cursos
+where ano = '2050'
+limit 2;
+
+truncate table cursos;
